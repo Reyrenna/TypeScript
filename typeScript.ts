@@ -64,8 +64,28 @@ let voto = 9
 const studente: (string | number)[] = [nome, voto]
 
 // 16) Crea un'interfaccia base "Veicolo" e estendila per creare "Auto".
-
+interface Veicolo {
+    colore: string
+    tipoDiVeicolo: string
+    anno: number
+    peso: number 
+}
+interface Auto extends Veicolo {
+    marca: string
+    grandezzaCerchi: number
+    motore: string
+}
 // 17) Crea un oggetto che implementi l'interfaccia Auto.
+let macchina: Auto = {
+colore: 'verde',
+tipoDiVeicolo: 'autoveicolo',
+anno: 2011,
+peso: 300,
+marca: 'Toyota',
+grandezzaCerchi: 18,
+motore: 'Toyota turbo V8'
+}
 // 18) Cosa sono i Generics in TypeScript?
+
 // 19) È possibile avere più tipi generici in un'interfaccia?
 // 20) Crea un'interfaccia generica per una risposta API.  
